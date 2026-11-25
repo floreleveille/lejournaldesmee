@@ -280,3 +280,4 @@ a:hover .fleche{transform:translateX(5px)}
 .prose th{background:var(--blush);color:var(--noir)}
 .duo img.logo-eri,img.logo-eri{width:110px;height:110px;aspect-ratio:1;object-fit:contain;box-shadow:none;border-radius:0;margin:0 0 14px}
 @media (max-width:980px){.hero .duo.inverse>img{max-height:420px;object-fit:cover}}
+@media (max-width:980px){.hero .duo.inverse>:first-child{order:0}.hero .duo.inverse>img{max-height:340px;width:100%;object-fit:cover;object-position:center 30%}}
