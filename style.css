@@ -281,3 +281,11 @@ a:hover .fleche{transform:translateX(5px)}
 .duo img.logo-eri,img.logo-eri{width:110px;height:110px;aspect-ratio:1;object-fit:contain;box-shadow:none;border-radius:0;margin:0 0 14px}
 @media (max-width:980px){.hero .duo.inverse>img{max-height:420px;object-fit:cover}}
 @media (max-width:980px){.hero .duo.inverse>:first-child{order:0}.hero .duo.inverse>img{max-height:340px;width:100%;object-fit:cover;object-position:center 30%}}
+.modules{counter-reset:m;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:0 32px}
+.modules li{counter-increment:m;display:flex;gap:14px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--ligne)}
+.modules li::before{content:counter(m,decimal-leading-zero);font:700 1.05rem var(--titre);color:var(--rose);flex:none;width:28px}
+.temoin .suite summary{cursor:pointer;color:var(--rose);font-weight:600;font-size:.92rem;list-style:none;margin:-6px 0 14px}
+.temoin .suite summary::-webkit-details-marker{display:none}
+.temoin .suite[open] summary{display:none}
+.temoin .suite p{font:italic 500 1rem/1.6 var(--titre);color:var(--noir);margin-bottom:12px}
+@media (max-width:760px){.modules{grid-template-columns:1fr}}
